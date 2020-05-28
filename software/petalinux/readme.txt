@@ -18,7 +18,7 @@ These instructions provide an outline of the steps required to boot Ubuntu Linux
 
 - Now create the petalinux project. (Note: the BSP file name changes with version.)
 
-    petalinux-create --force --type project --template zynqMP --source ~/Downloads/xilinx/zcu104/xilinx-zcu104-v2019.1-final.bsp --name proj1
+    petalinux-create --force --type project --template zynqMP --source ~/Downloads/xilinx/zcu104/xilinx-zcu104-v2019.2-final.bsp --name proj1
 
 - Now configure the petalinux project with the settings we need to run Ubuntu from the SD card.
 
@@ -38,7 +38,7 @@ These instructions provide an outline of the steps required to boot Ubuntu Linux
             earlycon clk_ignore_unused earlyprintk root=/dev/mmcblk0p2 rw rootwait cma=1024M
     * Save and exit the configuration menu. Wait for configuration to complete.
 
-- Now edit a file to patch a bug in the Petalinux BSP for the zcu104.
+- Now edit a file to patch a bug in the Petalinux BSP for the zcu104. (I don't know if this is still necessary.)
 
     vim project-spec/meta-user/conf/petalinuxbsp.conf
 
