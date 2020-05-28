@@ -53,7 +53,7 @@ These instructions provide an outline of the steps required to boot Ubuntu Linux
 
     petalinux-config -c kernel
     
-    You don't need to change anything. Just exit.
+    You don't need to change anything. Just exit.  (Watch out! Petalinux throws a pop-under window with the config menu. It will stall waiting for you to exit if you don't notice it.)
 
 - Now build the linux kernel
 
