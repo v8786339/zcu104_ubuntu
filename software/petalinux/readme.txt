@@ -51,10 +51,8 @@ These instructions provide an outline of the steps required to boot Ubuntu Linux
 
 - Now run another configu menu.
 
-    petalinux-config -c kernel
+    petalinux-config --silentconfig -c kernel
     
-    You don't need to change anything. Just exit.  (Watch out! Petalinux throws a pop-under window with the config menu. It will stall waiting for you to exit if you don't notice it.)
-
 - Now build the linux kernel
 
     petalinux-build
